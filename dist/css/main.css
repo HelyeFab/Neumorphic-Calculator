@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e9e9e9;
+  font-family: 'Fira Mono', monospace, sans-serif; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main {
+  box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 30px; }
+  main input, main button {
+    outline: none;
+    font-size: 30px;
+    color: #333333; }
+  main input::-webkit-outer-spin-button,
+  main input::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  main input[type="number"] {
+    -moz-appearance: textfield; }
+  main input {
+    box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    height: 60px;
+    padding: 16px 32px;
+    text-align: right;
+    border: none;
+    border-radius: 30px;
+    text-shadow: -1px -1px 2px #fff, 2px 2px 2px rgba(0, 0, 0, 0.4); }
+  main .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.8rem;
+    margin-top: 20px; }
+  main button {
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #e9e9e9; }
+    main button:hover, main button:active {
+      background-color: #dddbdb; }
+    main button:active {
+      box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4); }
+  main .op__key, main .eq__key {
+    color: #ff652f; }
+    main .op__key:active, main .eq__key:active {
+      color: #aa3c14; }
